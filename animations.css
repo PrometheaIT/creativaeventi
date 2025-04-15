@@ -1,0 +1,120 @@
+/* Parallax Effect */
+.parallax-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .parallax-bg {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    transform: translateZ(-1px) scale(1.1);
+    transition: transform 0.3s ease-out;
+    background-image: url();
+  }
+
+  /* Animazione Particelle */
+.particle-canvas-wrapper {
+  position: fixed; /* Cambiato da absolute a fixed */
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 998; /* Aumentato z-index */
+}
+
+.floating-elements {
+  position: relative;
+  height: 100%;
+}
+
+.floating-element {
+  position: absolute;
+  opacity: 0.7;
+  animation: float 12s infinite linear;
+}
+/* Animazione Logo Fluttuante */
+.floating-logo {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 120px;
+  height: auto;
+  opacity: 0.9;
+  animation: floatLogo 25s infinite linear;
+  filter: drop-shadow(0 0 10px rgba(0, 160, 155, 0.5));
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, opacity;
+  z-index: 99;
+}
+
+@keyframes floatLogo {
+    0% { transform: translate(-20%, -20%) rotate(0deg); }
+    25% { transform: translate(120%, 50%) rotate(180deg); }
+    50% { transform: translate(80%, 120%) rotate(360deg); }
+    75% { transform: translate(-40%, 80%) rotate(540deg); }
+    100% { transform: translate(-20%, -20%) rotate(720deg); }
+}
+
+/* Effetto Graffiti */
+@keyframes graffitiPop {
+  0% { transform: scale(0); opacity: 0; }
+  80% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.graffiti-text {
+  animation: graffitiPop 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: var(--primary-color);
+  text-shadow: 2px 2px var(--dark-color);
+}
+  
+  /* Scroll Reveal */
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  
+  .reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  
+  .reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Ottimizza il movimento per diversi viewport */
+@media (min-width: 768px) {
+  .floating-logo {
+      width: 120px;
+      animation: floatLogo 30s infinite linear;
+  }
+  
+  @keyframes floatLogo {
+      0% {
+          transform: translate(10%, 20%) rotate(0deg);
+      }
+      25% {
+          transform: translate(90%, 40%) rotate(90deg);
+      }
+      50% {
+          transform: translate(60%, 90%) rotate(180deg);
+      }
+      75% {
+          transform: translate(30%, 60%) rotate(270deg);
+      }
+      100% {
+          transform: translate(10%, 20%) rotate(360deg);
+      }
+  }
+}
