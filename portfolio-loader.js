@@ -4,7 +4,7 @@
 async function loadPartners() {
     try {
         const [response] = await Promise.all([
-            fetch('assets/data/partners.json'),
+            fetch('partners.json'),
             new Promise(resolve => setTimeout(resolve, 300)) // Delay minimo per fluidità
         ]);
         
