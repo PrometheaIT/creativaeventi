@@ -21,7 +21,7 @@
     min-height: 100vh;
     height: auto;
     background: linear-gradient(rgba(0, 160, 155, 0.8), rgba(0, 0, 0, 0.6)),
-                url('/assets/img/team/team-bg2.jpg') center/cover ;
+                url('team-bg2.jpg') center/cover ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,21 +132,21 @@
 
 /* Mappa le immagini ai data-attribute */
 .team-member[data-member="1"] .member-image {
-    background-image: url('/assets/img/team/team-1.png');
+    background-image: url('team-1.png');
     
 }
 
 .team-member[data-member="2"] .member-image {
-    background-image: url('/assets/img/team/team-2.png');
+    background-image: url('team-2.png');
 }
 
 .team-member[data-member="3"] .member-image {
-    background-image: url('/assets/img/team/team-3.png');
+    background-image: url('team-3.png');
 }
 
 
 .team-member[data-member="4"] .member-image {
-    background-image: url('/assets/img/team/team-4.png');
+    background-image: url('team-4.png');
 }
 
 .spaziobottone{
