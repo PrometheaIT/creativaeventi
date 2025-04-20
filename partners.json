@@ -1,0 +1,57 @@
+{
+    "featured": [
+        {
+            "name": "Illy S.p.A.",
+            "logo": "assets/img/partners/partner1.png"
+        },
+        {
+            "name": "Wedding Planner FVG",
+            "logo": "assets/img/partners/partner2.png"
+        },
+        {
+            "name": "Location d'Epoca",
+            "logo": "assets/img/partners/partner3.png"
+        },
+        {
+            "name": "Servizi Gastronomici",
+            "logo": "assets/img/partners/partner4.png"
+        },
+        {
+            "name": "FlorArt",
+            "logo": "assets/img/partners/partner5.png"
+        },
+        {
+            "name": "AudioVision",
+            "logo": "assets/img/partners/partner6.png"
+        },
+        {
+            "name": "Allestimenti Creativi",
+            "logo": "assets/img/partners/partner7.png"
+        },
+        {
+            "name": "Transport Luxury",
+            "logo": "assets/img/partners/partner8.png"
+        },
+        {
+            "name": "Safety Events",
+            "logo": "assets/img/partners/partner9.png"
+        }
+    ],
+    "allPartners": [
+        {
+            "name": "Illy S.p.A.",
+            "logo": "assets/img/partners/partner1.png",
+            "description": "Specialisti in intrattenimento e spettacoli"
+        },
+        {
+            "name": "Eataly",
+            "logo": "assets/img/partners/partner2.png",
+            "description": "Organizzazione matrimoni su misura"
+        },
+        {
+            "name": "Hotel Hilton",
+            "logo": "assets/img/partners/partner3.png",
+            "description": "Ville storiche per eventi esclusivi"
+        }
+    ]
+}

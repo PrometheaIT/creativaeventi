@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #00A09B;
+    --dark-color: #1D1D1B;
+    --light-color: #FFFFFF;
+  }
+
+/* Contatti - Creativa Eventi */
+.contact-section {
+    background: var(--light-color);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    padding: 0 2rem 8rem 2rem;
+    
+  }
+  
+  .contact-section h2 {
+    text-shadow: 2px 2px 4px #00A09B;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    letter-spacing: 3px;
+  }
+  
+  .animated-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: linear-gradient(45deg, #1D1D1B 0%, #00A09B 100%) padding-box,
+                linear-gradient(145deg, transparent 35%,#004240, #63fffa) border-box;
+    border: 3px solid transparent;
+    color: white;
+    
+  }
+
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 1.8rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--light-color);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color var(--transition-speed);
+    border-radius: 5px;
+    background: #fafafa;
+    color: #000;
+    font-weight: 400;
+    font-family: montserrat;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: #fff;
+  }
+  
+
+  
+  .form-group input:focus ~ .focus-border,
+  .form-group textarea:focus ~ .focus-border {
+    width: 100%;
+  }
+  
+
+  /* From Uiverse.io by wang3616359git */ 
+.bt {
+    border-radius: 30px;
+    font-weight: 600;
+    user-select: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: #00A09B;
+    height: 60px;
+    width: 155px;
+    transition: all 0.2s ease;
+    position: relative;
+    transition: transform var(--transition-speed);
+
+  }
+
+  .bt{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform var(--transition-speed);
+  }
+
+.bt:hover {
+  transform: translateY(-3px);
+}
+
+
+  
+  .msg {
+    height: 0;
+    width: 0;
+    border-radius: 2px;
+    position: absolute;
+    left: 15%;
+    top: 25%;
+  }
+  
+  .bt:active {
+    transition: all 0.001s ease;
+    background-color: #006663;
+    box-shadow: #1D1D1B 0 0 0 0;
+    transform: translateX(1px) translateY(1px);
+  }
+  
+  .bt:hover .msg {
+    animation: msgRun 2s forwards;
+  }
+  
+  @keyframes msgRun {
+    0% {
+      border-top: #d6d6d9 0 solid;
+      border-bottom: #f2f2f5 0 solid;
+      border-left: #f2f2f5 0 solid;
+      border-right: #f2f2f5 0 solid;
+    }
+  
+    20% {
+      border-top: #d6d6d9 14px solid;
+      border-bottom: #f2f2f5 14px solid;
+      border-left: #f2f2f5 20px solid;
+      border-right: #f2f2f5 20px solid;
+    }
+  
+    25% {
+      border-top: #d6d6d9 12px solid;
+      border-bottom: #f2f2f5 12px solid;
+      border-left: #f2f2f5 18px solid;
+      border-right: #f2f2f5 18px solid;
+    }
+  
+    80% {
+      border-top: transparent 12px solid;
+      border-bottom: transparent 12px solid;
+      border-left: transparent 18px solid;
+      border-right: transparent 18px solid;
+    }
+  
+    100% {
+      transform: translateX(150px);
+      border-top: transparent 12px solid;
+      border-bottom: transparent 12px solid;
+      border-left: transparent 18px solid;
+      border-right: transparent 18px solid;
+    }
+  }
