@@ -93,7 +93,7 @@
     position: relative;
     padding: 0.5rem 0;
     font-size: 1.2rem;
-    cursor: url('/assets/img/pointer.png') 16 16, auto;
+    cursor: url('/pointer.png') 16 16, auto;
 
   }
   
@@ -150,12 +150,12 @@
   
   
   @keyframes slideShow {
-    0%,     16.66%  { background-image: url('/assets/img/slideshow/slideshow1.jpg'); }
-    16.67%, 33.33%  { background-image: url('/assets/img/slideshow/slideshow2.jpg'); }
-    33.34%, 50.00%  { background-image: url('/assets/img/slideshow/slideshow3.jpg');}
-    50%,    66.67%  { background-image: url('/assets/img/slideshow/slideshow4.jpg'); }
-    66.68%, 83.34%  { background-image: url('/assets/img/slideshow/slideshow5.jpg');}
-    83.35%, 100%    { background-image: url('/assets/img/slideshow/slideshow6.jpg');}
+    0%,     16.66%  { background-image: url('slideshow1.jpg'); }
+    16.67%, 33.33%  { background-image: url('slideshow2.jpg'); }
+    33.34%, 50.00%  { background-image: url('slideshow3.jpg');}
+    50%,    66.67%  { background-image: url('slideshow4.jpg'); }
+    66.68%, 83.34%  { background-image: url('slideshow5.jpg');}
+    83.35%, 100%    { background-image: url('slideshow6.jpg');}
   }
   
 
