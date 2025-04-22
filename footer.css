@@ -143,7 +143,7 @@
   white-space: nowrap;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid transparent;
-  cursor: url('/assets/img/pointer.png') 16 16, auto;
+  cursor: url('pointer.png') 16 16, auto;
 }
 
 .bubble:hover {
