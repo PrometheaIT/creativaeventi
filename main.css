@@ -100,7 +100,7 @@
     position: relative;
     padding: 0.5rem 0;
     font-size: 1.2rem;
-    cursor: url('/assets/img/pointer.png') 16 16, auto;
+    cursor: url('pointer.png') 16 16, auto;
 
   }
   
