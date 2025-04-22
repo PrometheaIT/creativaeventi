@@ -96,7 +96,7 @@ class UnifiedParticleSystem {
     this.currentSettings = this.getCurrentSettings();
 
     this.logoImage.crossOrigin = "Anonymous";
-    this.logoImage.src = 'assets/img/logodef.png';
+    this.logoImage.src = 'logodef.png';
     this.logoImage.onload = () => {
       this.isImageLoaded = true;
       console.log('Image loaded successfully');
