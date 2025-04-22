@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Configurazione background
     const bgConfig = {
-        original: 'linear-gradient(rgba(0, 160, 155, 0.8), rgba(0, 0, 0, 0.6)), url("/assets/img/team/team-bg2.jpg") center/cover fixed',
-        hover: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2)), url("/assets/img/team/team-bg2.jpg") center/cover fixed'
+        original: 'linear-gradient(rgba(0, 160, 155, 0.8), rgba(0, 0, 0, 0.6)), url("team-bg2.jpg") center/cover fixed',
+        hover: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2)), url("team-bg2.jpg") center/cover fixed'
     };
 
     // Funzione per cambiare background
