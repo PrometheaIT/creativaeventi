@@ -21,12 +21,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin: 3rem 0;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .partner-card {
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 2.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     align-items: center;
@@ -128,7 +128,6 @@
 
 /* portfolio.css */
 .partner-section .section-title,
-.partner-section .featured-partners,
 .partner-section .partner-list {
     position: relative;
     z-index: 2; /* Aumenta lo z-index */
@@ -136,7 +135,10 @@
     border-radius: 10px;
     margin: 1rem;
     background: none !important; /* Rimuovi qualsiasi sfondo */
+}
 
+.partner-section .section-title{
+    margin-top: 4rem;
 }
 
 
@@ -144,4 +146,59 @@
 .partner-section .featured-partners {
   background: transparent !important; /* Rimuovi sfondo */
   backdrop-filter: none !important;
+}
+
+
+@media (max-width: 768px) {
+.featured-partners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem 1rem 5rem 1rem;
+}
+
+.partner-card {
+    border-radius: 10px;
+    padding: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    border: 1px solid #1D1D1B;
+    background: #FFFFFF;
+    min-height: 100px;
+}
+
+
+.partner-list {
+margin-top: 2rem !important;
+margin-bottom: 1rem !important;
+padding: 0.2rem !important;
+border: 0;
+}
+
+.partner-list-item {
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem !important;
+}
+
+.partner-list-logo {
+    flex: 0 0 50px;
+    margin-right: 1.5rem;
+}
+
+.partner-list-logo img {
+    max-width: 100%;
+    max-height: 50px;
+}
+
+.partner-list-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
 }

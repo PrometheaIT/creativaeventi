@@ -16,11 +16,16 @@
   
   .contact-section h2 {
     text-shadow: 2px 2px 4px #00A09B;
-    margin-top: 3rem;
     text-align: center;
-    font-size: 3rem;
-    margin-bottom: 3rem;
+    line-height: 1.2;
+    padding: 0 5%; /* Per mantenere spazio ai bordi */
+    font-size: clamp(2rem, 8vw, 3.5rem);
     letter-spacing: 3px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
   }
   
   .animated-form {
